@@ -3,7 +3,7 @@ describe("My First Test", () => {
     cy.visit("localhost:8080/");
     cy.get("[test-dataid='display']").should("have.text", 0);
   });
-  it("0より少なくはできない", () => {
+  it("0より少なくはできないです", () => {
     cy.visit("localhost:8080/");
     cy.get("[test-dataid='minusButton']").click();
     cy.get("[test-dataid='display']").should("have.text", 0);
