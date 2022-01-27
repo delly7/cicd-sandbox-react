@@ -13,7 +13,8 @@
     },
     "dependencies": {
         "react": "^16.13.1",
-        "react-dom": "^16.13.1"
+        "react-dom": "^16.13.1",
+        "yarn": "^1.22.17"
     },
     "devDependencies": {
         "@types/cypress": "^1.1.3",
