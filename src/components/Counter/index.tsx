@@ -14,6 +14,7 @@ const Counter: FC = (): ReactElement => {
   const [count, setCount] = useState(0);
   return (
     <>
+      <p>カウンター</p>
       <div className="display" test-dataid="display">
         {count}
       </div>
@@ -38,7 +39,6 @@ const Counter: FC = (): ReactElement => {
       <button
         className="clearButton"
         test-dataid="clearButton"
-        color="#4169e1"
         onClick={() => {
           setCount(0);
         }}
