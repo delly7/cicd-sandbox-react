@@ -38,6 +38,7 @@ const Counter: FC = (): ReactElement => {
       <button
         className="clearButton"
         test-dataid="clearButton"
+        color="#4169e1"
         onClick={() => {
           setCount(0);
         }}
