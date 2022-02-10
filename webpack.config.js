@@ -5,10 +5,12 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 /** @typedef {import('webpack').Configuration} WebpackConfiguration */
 
+const nodeEnv = process.env.NODE_ENV ?? "development";
+
 /** @type WebpackConfiguration */
 /** @type I */
 const config = {
-  mode: "development",
+  mode: nodeEnv,
   entry: "./src/main.tsx",
   output: {
     filename: "bundle.js",
