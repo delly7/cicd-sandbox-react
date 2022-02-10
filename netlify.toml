@@ -1,0 +1,12 @@
+[build]
+  publish = "dist"
+  command = "yarn build"
+
+[context.production.environment]
+  NODE_ENV = "production"
+
+[context.deploy-preview.environment]
+  NODE_ENV = "production"
+
+[context.branch-deploy.environment]
+  NODE_ENV = "development"
