@@ -10,10 +10,23 @@ const minusOne = (val: number): number => {
   return val - 1;
 };
 
+const text = (): string => {
+  const env = process.env.NODE_ENV ?? "development";
+  switch (env) {
+    case "development":
+      return "test counter";
+    case "production":
+      return "counter";
+    default:
+      return "counter";
+  }
+}
+
 const Counter: FC = (): ReactElement => {
   const [count, setCount] = useState(0);
   return (
     <>
+      <h2>{text()}</h2>
       <div className="display" test-dataid="display">
         {count}
       </div>
